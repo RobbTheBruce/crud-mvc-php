@@ -1,0 +1,17 @@
+{
+    "name": "bd1-developer/crud-poo",
+    "authors": [
+        {
+            "name": "roberto",
+            "email": "roberto.martins@allplats.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}
