@@ -9,9 +9,9 @@ class ClienteController extends Controller {
 
     private $model;
 
-    public function __construct($view = null) {
+    public function __construct($route = null) {
         $this->model = new clienteModel();   
-        parent::__construct();
+        parent::__construct($route);
     }
 
     public function listar() {

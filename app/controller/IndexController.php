@@ -41,7 +41,6 @@ class IndexController extends Controller {
     }
 
     public function deletar() {
-
         if (isset($_GET['id'])) {
             if ($this->model->deletar($_GET['id'])) {
                 echo "<script>"
@@ -55,7 +54,6 @@ class IndexController extends Controller {
                 . "</script>";
             }
         }
-        
     }
 
     public function inserir() {

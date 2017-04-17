@@ -18,19 +18,6 @@ class Controller {
         $this->template();
     }
 
-    public function rotas() {
-        $op = isset($_GET['op']) ? $_GET['op'] : NULL;
-        if (!$op || $op == 'listar') {
-            $this->listar();
-        } elseif ($op == 'alterar') {
-            $this->alterar();
-        } elseif ($op == 'deletar') {
-            $this->deletar();
-        } elseif ($op == 'inserir') {
-            $this->inserir();
-        }
-    }
-
     public function view($name, Array $options = null) {
 
         ob_start();

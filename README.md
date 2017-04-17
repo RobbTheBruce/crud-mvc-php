@@ -2,12 +2,19 @@
 
 Projeto de aplicação simples em php utilizando autoload e PDO.
 
-Obs para utilização do projeto:
+### Instação
 
-- configurar os dados de acesso ao banco no arquivo app/config/database.php
+Executar o comando do composer na pasta do projeto:
 
-- Sql para criação da tabela:
+```sh
+$ composer install
+```
 
+Configurar os dados de acesso ao banco no arquivo app/config/database.php
+
+Sql para criação da tabela:
+
+```sh
 CREATE TABLE `cliente` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) DEFAULT NULL,
@@ -20,7 +27,10 @@ CREATE TABLE `cliente` (
   `estado` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+```
 
-- Execute o comando abaixo na pasta do index para iniciar o servidor:
+Execute o comando abaixo na pasta do index para iniciar o servidor:
 
-php -S localhost:8000
+```sh
+$ php -S localhost:8000
+```
