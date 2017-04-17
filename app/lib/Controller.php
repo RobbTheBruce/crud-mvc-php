@@ -5,9 +5,16 @@ namespace app\lib;
 class Controller {
 
     public $content;
+    public $route;
 
-    public function __construct() {
-        $this->rotas();
+    public function __construct($route = null) {
+        $this->route = $route;
+        if(is_callable(array($this, $route['view']))){
+            $this->$route['view']($route['id']);
+        }else{
+            $this->listar();
+        }
+        
         $this->template();
     }
 
@@ -43,7 +50,7 @@ class Controller {
     public function template($name = null) {
         if ($name == null)
             $name = "index";
-
+        $request = $_REQUEST;
         include './public/template/' . $name . '.php';
     }
 

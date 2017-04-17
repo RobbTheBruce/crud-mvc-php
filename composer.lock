@@ -4,12 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cb28199225f527f4da10ff40a1bfd40",
-    "packages": [],
+    "content-hash": "2e9d9b662a4440ab44721b63e4560515",
+    "packages": [
+        {
+            "name": "leeoniya/route66",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leeoniya/Route66.php.git",
+                "reference": "da4796601bdc50bc801fc483ab148ec4802b307d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leeoniya/Route66.php/zipball/da4796601bdc50bc801fc483ab148ec4802b307d",
+                "reference": "da4796601bdc50bc801fc483ab148ec4802b307d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Route66.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leon Sorokin",
+                    "email": "leeoniya@gmail.com",
+                    "homepage": "https://github.com/leeoniya",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP micro-router",
+            "homepage": "https://github.com/leeoniya/Route66.php",
+            "keywords": [
+                "route",
+                "router",
+                "routing",
+                "sinatra"
+            ],
+            "time": "2016-01-05 09:12:21"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "leeoniya/route66": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

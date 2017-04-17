@@ -6,7 +6,15 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7592c69ab09b96d54551be437de9c0f1
 {
+    public static $files = array (
+        'b08f70dcfb4299c2d32cc054fb7a10b1' => __DIR__ . '/..' . '/leeoniya/route66/Route66.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'vendor\\' => 7,
+        ),
         'a' => 
         array (
             'app\\' => 4,
@@ -14,6 +22,10 @@ class ComposerStaticInit7592c69ab09b96d54551be437de9c0f1
     );
 
     public static $prefixDirsPsr4 = array (
+        'vendor\\' => 
+        array (
+            0 => 'C:\\xampp\\htdocs\\alura\\crud-mvc-php\\vendor',
+        ),
         'app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',

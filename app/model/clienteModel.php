@@ -4,7 +4,7 @@ namespace app\model;
 
 use app\config\database;
 
-class clienteService {
+class clienteModel {
 
     private $conn;
 

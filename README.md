@@ -20,3 +20,7 @@ CREATE TABLE `cliente` (
   `estado` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+- Execute o comando abaixo na pasta do index para iniciar o servidor:
+
+php -S localhost:8000

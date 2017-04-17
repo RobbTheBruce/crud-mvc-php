@@ -3,31 +3,30 @@
 namespace app\controller;
 
 use app\lib\Controller;
-use app\model\clienteService;
+use app\model\clienteModel;
 
 class IndexController extends Controller {
 
-    private $service;
+    private $model;
 
-    public function __construct() {
-        $this->service = new clienteService();   
-        parent::__construct();
+    public function __construct($route = null) {
+        $this->model = new clienteModel();   
+        parent::__construct($route);
     }
 
     public function listar() {
-        $clientes = $this->service->listar();
-        
+        $clientes = $this->model->listar();
         $this->view('index/listar',array('clientes' => $clientes));
     }
 
-    public function alterar() {
-        if (isset($_GET['id'])) {
-            $cliente = $this->service->busca($_GET['id']);
+    public function alterar($id) {
+        if (isset($id)) {
+            $cliente = $this->model->busca($id);
             if ($_POST) {
-                if ($this->service->alterar($_POST, $_GET['id'])) {
+                if ($this->model->alterar($_POST, $id)) {
                     echo "<script>"
                     . "alert('Alterado com sucesso!');"
-                    . "document.location = 'index.php';"
+                    . "document.location = '/index';"
                     . "</script>";
                 } else {
                     echo "<script>"
@@ -44,10 +43,10 @@ class IndexController extends Controller {
     public function deletar() {
 
         if (isset($_GET['id'])) {
-            if ($this->service->deletar($_GET['id'])) {
+            if ($this->model->deletar($_GET['id'])) {
                 echo "<script>"
                 . "alert('Deletado com sucesso!');"
-                . "document.location = 'index.php';"
+                . "document.location = '/index';"
                 . "</script>";
             } else {
                 echo "<script>"
@@ -56,14 +55,15 @@ class IndexController extends Controller {
                 . "</script>";
             }
         }
+        
     }
 
     public function inserir() {
         if ($_POST) {
-            if ($this->service->inserir($_POST)) {
+            if ($this->model->inserir($_POST)) {
                 echo "<script>"
                 . "alert('Cadastrado com sucesso!');"
-                . "document.location = 'index.php';"
+                . "document.location = /index';"
                 . "</script>";
             } else {
                 echo "<script>"

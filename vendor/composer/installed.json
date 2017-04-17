@@ -1,1 +1,49 @@
-[]
+[
+    {
+        "name": "leeoniya/route66",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/leeoniya/Route66.php.git",
+            "reference": "da4796601bdc50bc801fc483ab148ec4802b307d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/leeoniya/Route66.php/zipball/da4796601bdc50bc801fc483ab148ec4802b307d",
+            "reference": "da4796601bdc50bc801fc483ab148ec4802b307d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-01-05T09:12:21+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "Route66.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Leon Sorokin",
+                "email": "leeoniya@gmail.com",
+                "homepage": "https://github.com/leeoniya",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP micro-router",
+        "homepage": "https://github.com/leeoniya/Route66.php",
+        "keywords": [
+            "route",
+            "router",
+            "routing",
+            "sinatra"
+        ]
+    }
+]

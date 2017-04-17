@@ -1,14 +1,13 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="/index">
                 Voltar
             </a>
         </div>
     </div>
 </nav>
-
-<form id="formCliente" method="POST" action="index.php?op=<?php echo ($_GET['op'] == 'alterar')?$_GET['op']."&id=".$_GET['id']:$_GET['op'];?>">
+<form id="formCliente" method="POST" action="/index/<?php echo ($this->route['view'] == 'alterar')?$this->route['view']."/".$this->route['id']:$this->route['view'];?>">
     <div class="form-group">
         <label for="nome">Nome</label>
         <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu Nome" value="<?php echo isset($cliente)?$cliente['nome']:""; ?>">

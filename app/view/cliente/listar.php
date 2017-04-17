@@ -1,13 +1,8 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/index/inserir">
-                Novo Cliente
-            </a>
-        </div>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/cliente">
-                Outro Controller
+            <a class="navbar-brand" href="/index">
+                Voltar
             </a>
         </div>
     </div>
@@ -23,7 +18,6 @@
         <th>cep</th>
         <th>cidade</th>
         <th>estado</th>
-        <th>-</th>
     </tr>
     <?php foreach ($clientes as $value) : ?>
         <tr>
@@ -41,10 +35,6 @@
             <td><?php echo $value['cep']; ?></td>
             <td><?php echo $value['cidade']; ?></td>
             <td><?php echo $value['estado']; ?></td>
-            <td>
-                <a href="index/alterar/<?php echo $value['id'] ?>">Alterar</a>
-                <a href="index/deletar/<?php echo $value['id'] ?>">Deletar</a>
-            </td>
         </tr>
     <?php endforeach; ?>
 </table>

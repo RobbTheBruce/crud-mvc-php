@@ -2,4 +2,5 @@
 
 require 'vendor/autoload.php';
 
-$controller = new app\controller\IndexController();
+$controller = new \app\lib\Router();
+
