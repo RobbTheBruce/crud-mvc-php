@@ -7,8 +7,10 @@ Projeto de aplicação simples em php utilizando autoload e PDO.
 Executar o comando do composer na pasta do projeto:
 
 ```sh
-$ composer install
+$ composer update
 ```
+
+(Obs):. Caso ouver problemas com o plugin de rotas basta remover ele e baixar novamente: https://github.com/leeoniya/Route66.php
 
 Configurar os dados de acesso ao banco no arquivo app/config/database.php
 
